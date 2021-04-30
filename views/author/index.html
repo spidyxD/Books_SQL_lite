@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- file: views/books.php -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Let browser know website is optimized for mobile-->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+{{> navbar}}
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+     <h2>{{title}}</h2>
+     <table>
+      <tr>
+          <th>Author</th>
+          <th>Nationality</th>
+          <th>Birth</th><h>
+          <th>Fields</th>
+        </tr>
+       {{#authors}}
+      <tr>
+        <tr><td><a href="author/{{id}}">
+          {{author}} </a></td>
+          <td>{{nationality}}</td>
+          <td>{{birth}}</td>
+          <td>{{fields}}</td>
+      </tr>
+      {{/authors}}
+     </table>
+     
+    </div>
+   </div>
+ </div>
+
+</body>
+{{> footer}}
+</html>
