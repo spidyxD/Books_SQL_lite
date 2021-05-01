@@ -17,50 +17,51 @@
 <link rel="stylesheet" href="../css/style.css">
 </head>
 {{> navbar}}
+
 <body>
- <div class="container">
-  <div class="row">
-   <div class="eleven column" style="margin-top: 10%">
-    <h2>{{title}}</h2>
-    <form>
-     {{#author}}
-     <div class="row">
-      <div class="six columns">
-       <label for="nameInput">Name</label>
-       <input class="u-full-width" type="text" readonly
-          id="author" value="{{author}}">
-      </div>
-      <div class="six columns">
-       <label for="degreeInput">Nationality</label>
-       <input class="u-full-width" type="text" readonly
-          id="nationality" value="{{nationality}}">
-      </div>
+   <div class="container">
+    <div class="row">
+     <div class="eleven column" style="margin-top: 10%">
+      <h2>{{title}}</h2>
+      <form>
+       {{#author}}
+       <div class="row">
+        <div class="six columns">
+         <label for="nameInput">Name</label>
+         <input class="u-full-width" type="text" readonly
+            id="author" value="{{author}}">
+        </div>
+        <div class="six columns">
+         <label for="degreeInput">Nationality</label>
+         <input class="u-full-width" type="text" readonly
+            id="nationality" value="{{nationality}}">
+        </div>
+       </div>
+       <div class="row">
+        <div class="six columns">
+         <label for="emailInput">Birth</label>
+         <input class="u-full-width" type="text" readonly
+            id="birth_year" value="{{birth_year}}">
+        </div>
+        <div class="six columns">
+         <label for="phoneInput">Fields</label>
+         <input class="u-full-width" type="text" readonly
+           id="fields" value="{{fields}}">
+        </div>
+  
+       </div>
+       <div>
+        <h3>Books</h3>
+  
+        <a href="/book/{{books_book_id}}">{{books_title}}</a><br>
+      
+        </div>
+        <br>
+        <a class="button button-primary" href="/author">Back</a>
+       {{/author}}
+      </form>
      </div>
-     <div class="row">
-      <div class="six columns">
-       <label for="emailInput">Birth</label>
-       <input class="u-full-width" type="text" readonly
-          id="birth_year" value="{{birth}}">
-      </div>
-      <div class="six columns">
-       <label for="phoneInput">Fields</label>
-       <input class="u-full-width" type="text" readonly
-         id="fields" value="{{fields}}">
-      </div>
-
-     </div>
-     {{/author}}
-     <!-- <div>
-      <h3>Books</h3>
-
-      <a href="/book/{{books_book_id}}">{{title}}</a><br>
-    
-      </div> -->
-      <br>
-      <a class="button button-primary" href="/author">Back</a>
-    </form>
+    </div>
    </div>
-  </div>
- </div>
-</body>
+  </body>
 {{> footer}}

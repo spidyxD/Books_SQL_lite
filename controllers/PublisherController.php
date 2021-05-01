@@ -1,5 +1,5 @@
 <?php
-  // file: controllers/PublisherController.php
+  // file: controllers/BookController.php
 
   require_once('models/Publisher.php');
 
@@ -18,7 +18,7 @@
          'title'=>'Publisher Detail']);
     }
 
-   /*  public function create() {
+    public function create() {
       return view('publisher/create',
         ['title'=>'Create Publisher']);
     }
@@ -40,7 +40,7 @@
       return redirect('/publisher');
     }  
 
-     public function edit($id) {
+    public function edit($id) {
       $publisher = Publisher::find($id);
       return view('publisher/edit',
         ['publisher'=>$publisher,
@@ -59,6 +59,6 @@
                 'books_book_id'=>$books_book_id,'books_title'=>$books_title];
       Publisher::update($id,$item);
       return redirect('/publisher');
-    }   */
-  } 
+    }  
+  }
 ?>
