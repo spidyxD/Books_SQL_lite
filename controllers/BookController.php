@@ -28,7 +28,7 @@
       $title = Input::get('title');
       $edition = Input::get('edition');
       $copyright = Input::get('copyright');
-      $languaje = Input::get('languaje');
+      $languaje = Input::get('language');
       $pages = Input::get('pages');
       $author = Input::get('author');
       $author_id = Input::get('author_id');
