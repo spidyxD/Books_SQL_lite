@@ -47,7 +47,7 @@
          'title'=>'Publisher Edit']);
     }  
 
-    public function update($_,$id) {
+    /* public function update($_,$id) {
       $publisher = Input::get('publisher');
       $country = Input::get('country');
       $founded = Input::get('founded');
@@ -60,5 +60,5 @@
       Publisher::update($id,$item);
       return redirect('/publisher');
     }  
-  }
+  } */
 ?>
